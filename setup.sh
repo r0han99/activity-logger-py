@@ -1,35 +1,49 @@
 #!/bin/bash
 
 
-echo "Instantiating Logger Functionality"
-echo "Establishing assets."
+# confirmation
+echo "This setup presumes that you have Python-3>= pre-installed on your PC along with Pip. Enter [y/n]: "
+read control
+
+# details 
+BLUE='\033[0;36m'
+NC='\033[0m' # No Color
 
 
-# storing the file path
-logger_script="$(pwd)/activity_logger.py"
+if [[ $control == 'y' ]]
+then
+    echo "+ Instantiating Logger Functionality"
+    echo "+ Establishing assets."
+
+    # requirements
+    pip install -r requirements.txt
+    
+    echo "+ Done."
+    
+    # storing the file path
+    logger_script="./activity_logger.py"
+
+    echo -e "+ Forging Command: ${BLUE}actlogger${NC}"
+    touch actlogger
+    cp $logger_script actlogger
+
+    echo "+ converting script into executable"
+    echo "+ writing permissions; enter password if prompted."
+    # making it into an executable
+    chmod +x actlogger
+
+    # copied into execs
+    sudo cp ./actlogger /usr/local/bin/
+    echo -e "+ $ ${BLUE}actlogger${NC} is now forged as a commandline tool. Please try actlogger --help to initiate usage."
 
 
-# Creating a executables folder 
-mkdir ~/activity_logger
-mkdir ~/activity_logger/bin
 
-executables_dir="~/activity_logger/bin/"
-
-# cp itself to that bin
-chmod +x ./loggerpy.sh
-cp ./loggerpy.sh $executables_dir
+else
+    echo "x Please install both Python and Pip package handler."
+fi
+    
 
 
-echo "Setting up executables folder. Exporting .."
-export PATH=$PATH":$executables_dir"
-
-echo "Command loggerpy Available."
-
-# echo "Forging the command"
-
-# writing to .profile and .bash_profile
-# echo 'export PATH=$PATH":$executables_dir"' >> ~/.profile
-# echo 'export PATH=$PATH":$executables_dir"' >> ~/.bash_profile
 
 
 

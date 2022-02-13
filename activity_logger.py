@@ -1,4 +1,4 @@
-#!/Users/rohan/opt/anaconda3/bin/python
+#!/usr/bin/env python
 
 import shutil
 import sys 
@@ -18,12 +18,12 @@ VERSION = 1.0
 
 # PARSER instantiation
 parser = argparse.ArgumentParser()
-parser.add_argument("--init", help='Initialise Setup.', action='store_true')
+parser.add_argument("--init", help='Initialises Archive directory structure', action='store_true')
 parser.add_argument("-t", "--tasks", type=str, help='Enter all the key-topics formatted with hypens("-").')
 parser.add_argument("-i", "--info", type=str, help="Input Y/N to enter additional details in the catalog.", choices=['Y','N','y','n'])
-parser.add_argument("--summary", help='Summary of the most recent work', action='store_true')
-parser.add_argument("--backup", type=str, help='backup.',choices=['partial','absolute', 'par','abs'])
-parser.add_argument('--version', action='version', version=f'Activity Logger (actlogger) \033[96m(V{VERSION})\033[0m')
+parser.add_argument("--summary", help='Displays summary of the most recent work.', action='store_true')
+parser.add_argument("--backup", type=str, help='Backsup the Logdata with a dedicated timedelta.',choices=['partial','absolute'])
+parser.add_argument('--version', action='version', help='Program version.', version=f'Activity Logger (actlogger) \033[96m(V{VERSION})\033[0m')
                     
 args = parser.parse_args()
 
