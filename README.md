@@ -32,7 +32,7 @@ $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
-*~ Execlusive only to MacOS, Linux based OS*
+~ _Execlusive only to MacOS, Linux based OS_
 
 ---
 
