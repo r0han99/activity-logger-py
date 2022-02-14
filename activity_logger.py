@@ -437,7 +437,6 @@ elif args.summary:
     if len(records) != 0:
         print('+ \033[96mSummary\033[0m')
         print(f'- Streak - Days: [{day}]')
-        print(f"- TID - ")
         print(f"- Most Recent Work - [{records['TID'].values[-1:][0]}] : [{records['TASK'].values[-1:][0]}]")
         print(f"- Date Logged- [{records['DATE'].values[-1:][0]}]")
 
