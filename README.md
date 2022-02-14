@@ -74,7 +74,8 @@ $ ./setup.sh
   $ actlogger --summary
   ```
 
-  <img width="514" alt="image-20220214114415597" src="https://user-images.githubusercontent.com/45916202/153813190-72ab934e-9e34-4fad-bdda-252f3c6b2833.png">
+  <img width="329" alt="image-20220214121803942" src="https://user-images.githubusercontent.com/45916202/153814416-397e849b-6f45-4900-a77a-bb60a31876cc.png">
+
  
 
 ---
