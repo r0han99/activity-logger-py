@@ -43,22 +43,24 @@ $ ./setup.sh
   ```bash
   $ actlogger --init
   ```
+  <img width="616" alt="image-20220214112615681" src="https://user-images.githubusercontent.com/45916202/153812852-1d1a5786-5369-4a62-8f2d-9202fa015c64.png">
 
-  ![image-20220214112615681](/Users/rohan/Library/Application Support/typora-user-images/image-20220214112615681.png)
 
 * **$** ``Functionalities``
 
   ```bash
   $ actlogger --tasks constructors-classes-objects
   ```
+  <img width="528" alt="image-20220214112959474" src="https://user-images.githubusercontent.com/45916202/153813027-ec9fe36e-186f-44f8-916a-d55906cb7f83.png">
 
-  ![](/Users/rohan/Library/Application Support/typora-user-images/image-20220214112930541.png)
+
 
    ```
   $ actlogger --tasks constructors-classes-objects --info y
    ```
 
-  ![image-20220214113454224](/Users/rohan/Library/Application Support/typora-user-images/image-20220214113454224.png)
+  <img width="1225" alt="image-20220214113454224" src="https://user-images.githubusercontent.com/45916202/153813139-9eb26b44-4333-40c3-91c3-74e0a82b3f7b.png">
+
 
 * $ ``backup``
 
@@ -72,11 +74,12 @@ $ ./setup.sh
   $ actlogger --summary
   ```
 
-  ![image-20220214114415597](/Users/rohan/Library/Application Support/typora-user-images/image-20220214114415597.png)
+  <img width="514" alt="image-20220214114415597" src="https://user-images.githubusercontent.com/45916202/153813190-72ab934e-9e34-4fad-bdda-252f3c6b2833.png">
+ 
 
 ---
 
-#### Prospective Features will Include
+#### Prospective Features
 
 * ``--restore`` : Functionality to take the latest backedup Archive and Restore the logging setup, if the assets are deleted accidentally.
 * ``--amend`` : Functionality to edit a particular ;og line.
