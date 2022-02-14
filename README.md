@@ -46,7 +46,7 @@ $ ./setup.sh
 
   ![image-20220214112615681](/Users/rohan/Library/Application Support/typora-user-images/image-20220214112615681.png)
 
-* **$** ``functionalities``
+* **$** ``Functionalities``
 
   ```bash
   $ actlogger --tasks constructors-classes-objects
