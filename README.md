@@ -4,7 +4,7 @@
 
 ---
 
-## Brief
+## Briefing
 
 _**Actlogger** command-line tool that can be used to establish records of your sequential day-to-day works in a log. This tool integrates well with projects like 50 and 100 days of code. Users can keep track of their work at the end of the day into this log to keep track of everything they learn over the course._
 
