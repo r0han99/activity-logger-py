@@ -6,7 +6,7 @@
 
 ## Briefing
 
-_**Actlogger** command-line tool that can be used to establish records of your sequential day-to-day works in a log. This tool integrates well with projects like 50 and 100 days of code. Users can keep track of their work at the end of the day into this log to keep track of everything they learn over the course._
+_**Actlogger** is a command-line tool that can be used to establish records of your sequential day-to-day works in a log. This tool integrates well with projects like 50 and 100 days of code. Users can keep track of their work at the end of the day into this log to keep track of everything they learn over the course._
 
 ---
 
@@ -54,7 +54,6 @@ $ ./setup.sh
   <img width="528" alt="image-20220214112959474" src="https://user-images.githubusercontent.com/45916202/153813027-ec9fe36e-186f-44f8-916a-d55906cb7f83.png">
 
 
-
    ```
   $ actlogger --tasks constructors-classes-objects --info y
    ```
@@ -88,6 +87,8 @@ $ ./setup.sh
   * Topic or Concepts Mentioned more number of times.
   * Average Time Taken?
 * ``--synch`` : Functionality to synch inconsistent records.
+* ``--trackers`` : Functionality to keep track of all the active loggers present at the moment.(Multiple directories may have a tracker each)
+* ``--streak-status``: Functionality to display all the times a consistent streak is broken, and what was the time-off. 
 * A pip package? -- *Only time will tell.*
 
 ---
