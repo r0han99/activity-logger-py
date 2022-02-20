@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 # SCRIPT VERSION
-VERSION = 1.0
+VERSION = 0.0.3
 
 
 # PARSER instantiation
