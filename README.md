@@ -27,7 +27,7 @@ $ git clone https://github.com/r0han99/activity-logger-py.git
 step-3: ``setup.sh``
 
 ```bash
-$ cd into-repo
+$ cd into-repo #representation
 $ chmod +x setup.sh
 $ ./setup.sh
 ```
@@ -55,7 +55,7 @@ $ ./setup.sh
 
 
    ```
-  $ actlogger --tasks constructors-classes-objects --info y
+  $ actlogger --tasks constructors-classes-objects --info y # for logging additional content
    ```
 
   <img width="1225" alt="image-20220214113454224" src="https://user-images.githubusercontent.com/45916202/153813139-9eb26b44-4333-40c3-91c3-74e0a82b3f7b.png">

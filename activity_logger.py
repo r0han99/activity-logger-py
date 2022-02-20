@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.8
 
 import shutil
 import sys 
@@ -89,7 +89,7 @@ def init():
 
             
         if args.init == True:
-            print('Setup Complete, use activity_logger --help for functionality and assistance.')
+            print('Setup Complete, use actlogger --help for functionality and assistance.')
         else:
             print('Setup Complete.')
         print('')
