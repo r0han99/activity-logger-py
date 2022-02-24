@@ -10,7 +10,7 @@ _**Actlogger** is a command-line tool that can be used to establish records of y
 
 ---
 
-## Installation V1.0
+## Installation V0.0.4
 
 step-1: ``requirements``
 
