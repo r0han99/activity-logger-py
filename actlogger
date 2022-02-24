@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 # SCRIPT VERSION
-VERSION = '0.0.4'
+VERSION = '0.0.3'
 
 
 # PARSER instantiation
@@ -27,6 +27,11 @@ parser.add_argument('--version', action='version', help='Program version.', vers
                     
 args = parser.parse_args()
 
+# print(args.init)
+# print(args.info)
+# print(args.tasks)
+# print(args.backup)
+
 
 
 abspath = os.getcwd()
@@ -35,10 +40,6 @@ path = os.path.join(abspath, '.archive')
 
 # INIT
 def init():
-    '''
-        Establishes assets to be used by the ccmmanding script.
-    
-    '''
     
     global path
 
@@ -122,7 +123,7 @@ def init():
         print('+ Backup repository established.')
 
         if args.init == True:
-            print('Setup Complete, use actlogger --help for functionality and assistance.')
+            print('Setup Complete, use activity_logger --help for functionality and assistance.')
         else:
             print('Setup Complete.')
 
@@ -300,7 +301,7 @@ def silent_check():
 
         '''
         Display a Note to inform the user that if at all after the FATAL prompt the data logged is not the first, then in that case
-        user should be prompted to use --restore ( prospective feature )
+        user should be prompted to use --restore (V.2)
         
         '''
         
@@ -390,20 +391,8 @@ elif not funcs['backup'] == None:
                 
         
     if control == 'proceed':
-
-        '''
-        proceed block is executed only when the user decides to override the backup operation
-        which is usually executed only when there are more than 20Logs.
-        
-        '''
     
         if args.backup == 'partial':
-
-            '''
-                Partial Backup, archives the only the LogDatabase and Tasksequence file leaving the details folder.
-            '''
-
-
             # mode
             print('Partial')
             logdatapath = os.path.join(path, 'logdata.csv')
@@ -442,10 +431,6 @@ elif args.init:
 
 elif args.summary:
 
-    '''
-        Displays, the summary of the Days, and the most recent logged operation.
-    '''
-
     # fetch records
     records, day = fetch_records()
     
@@ -458,6 +443,7 @@ elif args.summary:
         '''
         Additional Info exists print that 
         '''
+
 
     else:
         print('x No Records to summarise.')
